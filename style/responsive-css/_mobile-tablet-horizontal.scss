@@ -1,0 +1,20 @@
+@media (max-height: 424px){
+
+    .hero img {
+        height: 300px;
+        max-width: 270px;
+    }
+    
+}
+
+@media (max-height: 1024px){
+
+    .hero {
+        max-height: 400px;
+    }
+    
+    .hero img {
+        max-height: 400px;
+    }
+
+}

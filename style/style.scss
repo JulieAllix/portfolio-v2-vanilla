@@ -1,0 +1,121 @@
+/* General */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./fonts";
+
+body {
+    font-family: PopLight;
+    font-weight: 100;
+}
+
+.portfolio {
+    color: white;
+    background: radial-gradient(#4B4B4B, #0B1023);
+}
+
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.hero {
+    overflow: hidden;
+    max-height: 480px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+}
+
+.hero img {
+    max-height: 480px;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+.photo-right {
+    transform: translate(0%, 7%);
+}
+
+.photo-left {
+    transform: translate(0%, -7%);
+}
+
+.hero:hover .photo-right {
+    transform: translate(0%, 0%);
+}
+
+.hero:hover .photo-left {
+    transform: translate(0%, 0%);
+}
+
+.details {
+    grid-column: 2/3;
+    align-self: end;
+}
+
+.details h1, .details-txt h1 {
+    font-size: 54px;
+    font-family: Abril;
+    font-weight: 100;
+}
+
+.details h2 {
+    font-size: 42px;
+    padding: 0px 0px 140px;
+}
+
+.details p {
+    font-size: 24px;
+    padding: 20px 0px 50px 0px;
+}
+
+.pages {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page-1 {
+    display: flex;
+}
+
+.pages > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pages h4 {
+    font-size: 24px;
+    padding: 30px;
+    justify-self: flex-end;
+}
+
+.pages svg {
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(1.5);
+}
+
+.pages svg:hover {
+    animation: dot 0.5s ease-in-out infinite alternate;
+}
+
+.pages svg.active {
+    opacity: 1;
+}
+
+@import "./keyframes";
+@import "./projects";
+@import "./training-contact";
+@import "./projects-detail";
+@import "responsive-css/tablet";
+@import "responsive-css/mobile";
+@import "responsive-css/mobile-tablet-horizontal";
