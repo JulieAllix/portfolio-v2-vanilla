@@ -41,7 +41,8 @@ body {
 }
 
 .hero img {
-    height: 500px;transition: transform 0.3s ease-out;
+    height: 500px;
+    transition: transform 0.3s ease-out;
     cursor: pointer;
 }
 
@@ -125,4 +126,54 @@ body {
     100% {
         transform: scale(2.5);
     }
+}
+
+.details-projects {
+    border: 2px solid white;
+    padding: 1em;
+    grid-column: 2/3;
+    align-self: center;
+}
+
+.p-skills {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 1em;
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    padding-top: 2em;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-skill {
+    height: 70px;
+}
+
+.skill-name {
+    padding: 5px;
+}
+
+.hero-projects {
+    align-self: center;
+    justify-self: center;
+    margin-left: 10em;
+}
+
+.project-ico {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+.project-ico-lg {
+    width: 415px;
+    margin: 5px;
 }
