@@ -21,6 +21,7 @@
 
 body {
     font-family: PopLight;
+    font-weight: 100;
 }
 
 .portfolio {
@@ -72,6 +73,7 @@ body {
 .details h1, .details-txt h1 {
     font-size: 54px;
     font-family: Abril;
+    font-weight: 100;
 }
 
 .details h2 {
@@ -138,12 +140,17 @@ body {
     padding: 1em;
     grid-column: 2/3;
     align-self: center;
+    margin-top: 2em;
 }
 
 .p-skills {
     text-align: center;
     font-size: 18px;
     padding-top: 1em;
+}
+
+.p-skills-tactile {
+    display: none;
 }
 
 .skills {
@@ -222,4 +229,241 @@ body {
 .contact-icon {
     width: 25px;
     margin-right: 1em;
+}
+
+/* photo.hmtl */
+
+.banner {
+    height: 75vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.title h1, .title h2 {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.title h1 {
+    font-size: 54px;
+    font-family: Abril;
+    font-weight: 100;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 80px 0px;
+}
+
+.project-description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-description h3 {
+    font-size: 36px;
+}
+
+.project-description p {
+    padding: 20px 0px;
+    font-size: 25px;
+}
+
+.projects-skills {
+    list-style-type: '-';
+    padding: 20px 0px;
+    margin-bottom: 1em;
+}
+
+.projects-skills li {
+    font-size: 25px;
+}
+
+.project-img {
+    display: flex;
+}
+
+.project-img img {
+    width: 350px;
+    margin: 0 0.5em;
+}
+
+.project-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.btn {
+    width: 80%;
+    font-family: PopLight;
+    font-size: 36px;
+    padding: .5em;
+    margin: .5em auto;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px){
+
+    .page {
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 2fr 1fr;
+        align-items: center;
+    }
+
+    .hero {
+        grid-column: 2/3;
+        height: auto;
+    }
+
+    .hero img {
+        height: 500px;
+    }
+
+    .details {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        text-align: center;
+    }
+
+    .details h1 {
+        font-size: 48px;
+    }
+
+    .details h2 {
+        font-size: 38px;
+    }
+
+    .details-project {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        text-align: center;
+    }
+}
+
+@media (max-width: 414px){
+
+    .pages {
+        display: none;
+    }
+
+    .portfolio {
+        padding: .8em;
+    }
+
+    .page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details {
+        align-self: top;
+        margin: 2em auto 0;
+    }
+
+    .hero {
+        padding: 0;
+    }
+    
+    h1, h2, h3 {
+        text-align: center;
+    }
+    
+    .details h1 {
+        font-size: 30px;
+    }
+
+    .details h2 {
+        font-size: 24px;
+        padding-bottom: 40px;
+    }
+
+    .details h1, .details-txt h1 {
+        font-size: 38px;
+    }
+
+    .details-txt h1 {
+        font-size: 30px;
+    }
+
+    .details-txt h2 {
+        font-size: 24px;
+    }
+
+    .details-txt h3 {
+        font-size: 20px;
+    }
+
+    .rest {
+        margin-left: 0em;
+    }
+
+    .hero img {
+        height: 300px;
+        max-width: 150px;
+    }
+
+    .p-skills {
+        display: none;
+    }
+
+    .p-skills-tactile {
+        display: block;
+    }
+
+    .hero-projects {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        margin: 1em 0em;
+    }
+    
+    .project-ico {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .project-ico-lg {
+        width: 300px;
+    }
+
+    .details-txt {
+        grid-column: 1/2;
+        align-self: center;
+    }
+
 }
