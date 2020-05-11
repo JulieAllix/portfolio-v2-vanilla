@@ -70,4 +70,51 @@
         width: 300px;
     }
 
+    /* Projects Detail */
+
+    .project {
+        padding: 1em;
+    }
+
+    .title {
+        top: 3em;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+    
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .project-description {
+        width: 100%;
+    }
+
+    .project-description h3 {
+        font-size: 20px;
+    }
+
+    .project-description p {
+        padding: 20px 0px;
+        font-size: 15px;
+    }
+
+    .projects-skills li {
+        font-size: 15px;
+    }
+
+    .project-img {
+        justify-content: center;
+    }
+
+    .project-img img {
+        max-width: 150px;
+        margin: 0 0.5em;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
 }

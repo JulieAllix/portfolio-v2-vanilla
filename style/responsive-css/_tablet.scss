@@ -103,4 +103,51 @@
     .rest {
         margin-left: 0em;
     }
+
+    /* Projects Detail */
+
+    main {
+        width: 100vw;
+    }
+
+    .banner {
+        height: auto;
+    }
+
+    .banner img {
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .title {
+        position: absolute;
+        top: 13em;
+        padding: .1em;
+    }
+
+    .title h1 {
+        font-size: 38px;
+    }
+    
+    .title h2 {
+        font-size: 24px;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project-description {
+        width: 100%;
+    }
+
+    .project-img {
+        justify-content: center;
+    }
+
+    .project-img img {
+        max-width: 300px;
+        margin: 0 0.5em;
+    }
 }

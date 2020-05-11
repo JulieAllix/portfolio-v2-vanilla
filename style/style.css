@@ -320,10 +320,7 @@ body {
 
 .title {
   position: absolute;
-  top: 85%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -70%);
-          transform: translate(-50%, -70%);
+  top: 70%;
   background-color: rgba(0, 0, 0, 0.25);
   width: 100%;
   text-align: center;
@@ -428,6 +425,8 @@ body {
 
 .btn:hover {
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 @media (max-width: 1024px) {
@@ -558,6 +557,49 @@ body {
   .rest {
     margin-left: 0em;
   }
+  /* Projects Detail */
+  main {
+    width: 100vw;
+  }
+  .banner {
+    height: auto;
+  }
+  .banner img {
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .title {
+    position: absolute;
+    top: 13em;
+    padding: .1em;
+  }
+  .title h1 {
+    font-size: 38px;
+  }
+  .title h2 {
+    font-size: 24px;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-description {
+    width: 100%;
+  }
+  .project-img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-img img {
+    max-width: 300px;
+    margin: 0 0.5em;
+  }
 }
 
 @media (max-width: 414px) {
@@ -627,12 +669,68 @@ body {
   .project-ico-lg {
     width: 300px;
   }
+  /* Projects Detail */
+  .project {
+    padding: 1em;
+  }
+  .title {
+    top: 3em;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .title h2 {
+    font-size: 20px;
+  }
+  .project-description {
+    width: 100%;
+  }
+  .project-description h3 {
+    font-size: 20px;
+  }
+  .project-description p {
+    padding: 20px 0px;
+    font-size: 15px;
+  }
+  .projects-skills li {
+    font-size: 15px;
+  }
+  .project-img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-img img {
+    max-width: 150px;
+    margin: 0 0.5em;
+  }
+  .btn {
+    font-size: 20px;
+  }
 }
 
 @media (max-height: 424px) {
   .hero img {
     height: 300px;
     max-width: 270px;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .title h2 {
+    font-size: 20px;
+  }
+  .project-description h3 {
+    font-size: 20px;
+  }
+  .project-description p {
+    font-size: 15px;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  .projects-skills li {
+    font-size: 15px;
   }
 }
 

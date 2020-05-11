@@ -5,6 +5,29 @@
         max-width: 270px;
     }
     
+    .title h1 {
+        font-size: 30px;
+    }
+    
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .project-description h3 {
+        font-size: 20px;
+    }
+
+    .project-description p {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+
+    .projects-skills li {
+        font-size: 15px;
+    }
 }
 
 @media (max-height: 1024px){
