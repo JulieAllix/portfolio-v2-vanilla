@@ -1,3 +1,5 @@
+/* General */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -67,8 +69,8 @@ body {
     align-self: end;
 }
 
-.details h1 {
-    font-size: 64px;
+.details h1, .details-txt h1 {
+    font-size: 54px;
     font-family: Abril;
 }
 
@@ -128,6 +130,9 @@ body {
     }
 }
 
+
+/* Projects page */
+
 .details-projects {
     border: 2px solid white;
     padding: 1em;
@@ -176,4 +181,45 @@ body {
 .project-ico-lg {
     width: 415px;
     margin: 5px;
+}
+
+/* Training & Contact pages */
+
+
+.details-txt {
+    grid-column: 2/3;
+    align-self: center;
+}
+.details-txt h3 {
+    font-size: 36px;
+    padding: 20px 0px;
+}
+
+.p-content {
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+.hero-projects {
+    align-self: center;
+    justify-self: center;
+    margin-left: 10em;
+}
+
+.rest {
+    margin-left: 20em;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.contact-icon {
+    width: 25px;
+    margin-right: 1em;
 }
