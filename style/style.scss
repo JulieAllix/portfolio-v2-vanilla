@@ -9,11 +9,13 @@
 @import "./fonts";
 
 body {
+    
     font-family: PopLight;
     font-weight: 100;
 }
 
 .portfolio {
+    overflow: hidden;
     color: white;
     background: radial-gradient(#4B4B4B, #0B1023);
 }
