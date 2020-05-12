@@ -18,10 +18,19 @@ body {
     background: radial-gradient(#4B4B4B, #0B1023);
 }
 
-.page {
+.standard-page {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.page-projects, .training, .contact {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .hero {
@@ -36,6 +45,10 @@ body {
     max-height: 480px;
     transition: transform 0.3s ease-out;
     cursor: pointer;
+}
+
+.hero a {
+    display: flex;
 }
 
 .photo-right {

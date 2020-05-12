@@ -10,7 +10,7 @@
         text-align: center;
     }
 
-    .page {
+    .standard-page {
         grid-template-columns: 5% 1fr 5%;
         grid-template-rows: 2fr 1fr;
         align-items: center;
@@ -48,7 +48,7 @@
 
     /* Projects */
 
-    .page-projects, .page {
+    .page-projects, .standard-page {
         min-height: 100vh;
         display: flex;
         flex-direction: column;

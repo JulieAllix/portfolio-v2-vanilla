@@ -20,25 +20,39 @@
             </nav>
             -->
             <main>
-                <section class="page home">
+                <section class="standard-page home page">
                     <div class="details">
                         <h1>Julie Allix</h1>
                         <h2>Frontend Developer</h2>
                     </div>
                     <div class="hero">
-                        <img
-                            class="photo-left"
-                            src="img/photo-left.jpg"
-                            alt="Julie Allix"
-                        >
-                        <img
-                            class="photo-right"
-                            src="img/photo-right.jpg"
-                            alt="Julie Allix"
-                        >
+                        <a href="#contact">
+                            <img
+                                class="photo-left"
+                                src="img/photo-left.jpg"
+                                alt="Julie Allix"
+                            >
+                            <img
+                                class="photo-right"
+                                src="img/photo-right.jpg"
+                                alt="Julie Allix"
+                            >
+                            <!--
+                            <img
+                                class="photo-left"
+                                src="img/julie-1.png"
+                                alt="Julie Allix"
+                            >
+                            <img
+                                class="photo-right"
+                                src="img/julie-2.png"
+                                alt="Julie Allix"
+                            >
+                            -->
+                        </a>
                     </div>
                 </section>
-                <section class="page-projects">
+                <section class="page-projects page">
                     <div class="details-txt">
                         <h1>My personal projects</h1>
                         <div class="details-projects">
@@ -74,11 +88,17 @@
                         </div>
                     </div>
                     <div class="hero-projects">
-                        <img
-                            class="project-ico"
-                            src="img/grocereaz-ico.jpg"
-                            alt="Grocer'eaz"
-                        >
+                        <div class="hero">
+                            <div class="photo-left">.</div>
+                            <div class="photo-right">.</div>
+                        </div>
+                        <a href="./photo.html">
+                            <img
+                                class="project-ico"
+                                src="img/grocereaz-ico.jpg"
+                                alt="Grocer'eaz"
+                            >
+                        </a>
                         <img
                             class="project-ico"
                             src="img/break-free-ico.jpg"
@@ -101,7 +121,7 @@
                         >
                     </div>
                 </section>
-                <section class="page training">
+                <section class="standard-page training page">
                     <div class="details-txt">
                         <h1>My training at O'clock</h1>
                         <h3>A virtual classroom</h3>
@@ -114,19 +134,25 @@
                         <p class="p-content">Two-hours challenges on a daily basis, eight peer-programming workshop days, one month of full-time project with a team ...</p>
                     </div>
                     <div class="hero rest">
-                        <img
-                            class="photo-left"
-                            src="img/computer-left.jpg"
-                            alt="A computer"
-                        >
-                        <img
-                            class="photo-right"
-                            src="img/computer-right.jpg"
-                            alt="A computer"
-                        >
+                        <!--
+                        <a href="www.oclock.io">
+                        -->
+                            <img
+                                class="photo-left"
+                                src="img/computer-left.jpg"
+                                alt="A computer"
+                            >
+                            <img
+                                class="photo-right"
+                                src="img/computer-right.jpg"
+                                alt="A computer"
+                            >
+                        <!--
+                        </a>
+                        -->
                     </div>
                 </section>
-                <section class="page contact">
+                <section class="standard-page contact page" id="contact">
                     <div class="details-txt">
                         <h1>Contact</h1>
                         <h3>About me</h3>
@@ -223,5 +249,8 @@
             </main>
         </header>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
