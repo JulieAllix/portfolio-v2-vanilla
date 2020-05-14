@@ -3,12 +3,12 @@
 .page-projects {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    grid-template-columns: 5% 1fr 1fr 15%;
 }
 
 .details-projects {
     border: 2px solid white;
-    padding: 1em;
+    padding: .9em;
     grid-column: 2/3;
     align-self: center;
     margin-top: 2em;
