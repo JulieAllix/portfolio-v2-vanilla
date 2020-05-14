@@ -108,11 +108,13 @@ body {
   font-size: 54px;
   font-family: Abril;
   font-weight: 100;
+  text-align: center;
 }
 
 .details h2 {
   font-size: 42px;
   padding: 0px 0px 140px;
+  text-align: center;
 }
 
 .details p {
@@ -222,10 +224,16 @@ body {
 }
 
 .skills {
+  /*
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 2em;
 }
 
@@ -240,10 +248,34 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.skill-lg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .logo-skill {
   height: 70px;
+}
+
+.logo-skill-lg {
+  width: 70px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .skill-name {
@@ -443,12 +475,51 @@ body {
   margin: .5em auto;
   background-color: white;
   border: 2px solid black;
+  position: relative;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .btn:hover {
   cursor: pointer;
   background-color: black;
   color: white;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.btn:hover .tooltip {
+  opacity: 1;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.tooltip {
+  background-color: #bbb9b9;
+  border: 1px solid #bbb9b9;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: -1.8em;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #bbb9b9 transparent transparent transparent;
 }
 
 @media (max-width: 1024px) {

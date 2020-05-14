@@ -25,8 +25,14 @@
 }
 
 .skills {
-    list-style: none;
+    /*
+    width: 80%;
     display: flex;
+    flex-wrap: wrap;
+    */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
     padding-top: 2em;
 }
 
@@ -34,10 +40,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skill-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .logo-skill {
     height: 70px;
+}
+
+.logo-skill-lg {
+    width: 70px;
+    align-self: center;
 }
 
 .skill-name {
