@@ -301,6 +301,10 @@ a {
   margin-left: 10em;
 }
 
+.hero-projects a {
+  text-decoration: none;
+}
+
 .project-ico {
   width: 200px;
   height: 200px;
