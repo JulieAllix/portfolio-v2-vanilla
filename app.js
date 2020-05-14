@@ -53,13 +53,13 @@ function init() {
 
         // tl.fromTo(what I want to animate, the time, {y: '-10%'}, {y: '-100%'})
         // -=0.2 will make the animation start quicker : the second animation will not wait until the ed of the first animation
-        tl.fromTo(currentLeft, 0.3, {y: '-10%'}, {y: '-100%'})
-        .fromTo(currentRight, 0.3, {y: '10%'}, {y: '-100%'}, '-=0.2')
+        tl.fromTo(currentLeft, 0.3, {y: '-7%'}, {y: '-100%'})
+        .fromTo(currentRight, 0.3, {y: '7%'}, {y: '-100%'}, '-=0.2')
         .to(portfolio, 0.3, { backgroundImage: backgrounds[pageNumber] })
         .fromTo(currentPage, 0.3, {opacity:1, pointerEvents: 'all'}, {opacity:0, pointerEvents: 'none'})
         .fromTo(nextPage, 0.3, {opacity:0, pointerEvents: 'none'}, {opacity:1, pointerEvents: 'all'}, "-=0.6")
-        .fromTo(nextLeft, 0.3, {y: '-100%'}, {y: '-10%'}, '-=0.6')
-        .fromTo(nextRight, 0.3, {y: '-100%'}, {y: '10%'}, '-=0.8')
+        .fromTo(nextLeft, 0.3, {y: '-100%'}, {y: '-7%'}, '-=0.6')
+        .fromTo(nextRight, 0.3, {y: '-100%'}, {y: '7%'}, '-=0.8')
         .fromTo(nextText, 0.3, {opacity: 0, y: 30}, {opacity: 1, y: 0})
         .set(nextLeft, {clearProps: 'all'})
         .set(nextRight, {clearProps: 'all'});
