@@ -51,7 +51,10 @@ body {
 
 .hero {
   overflow: hidden;
-  max-height: 480px;
+  /*
+    max-height: 480px;
+    */
+  max-width: 470px;
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: center;
@@ -61,7 +64,10 @@ body {
 }
 
 .hero img {
-  max-height: 480px;
+  /*
+    max-height: 480px;
+    */
+  width: 200px;
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;

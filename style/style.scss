@@ -37,14 +37,20 @@ body {
 
 .hero {
     overflow: hidden;
+    /*
     max-height: 480px;
+    */
+    max-width: 470px;
     align-self: center;
     justify-self: center;
     display: flex;
 }
 
 .hero img {
+    /*
     max-height: 480px;
+    */
+    width: 200px;
     transition: transform 0.3s ease-out;
     cursor: pointer;
 }
