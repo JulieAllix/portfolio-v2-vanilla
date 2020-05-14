@@ -301,11 +301,28 @@ body {
   width: 200px;
   height: 200px;
   margin: 5px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .project-ico-lg {
   width: 415px;
   margin: 5px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.project-ico:hover, .project-ico-lg:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 /* Training & Contact pages */

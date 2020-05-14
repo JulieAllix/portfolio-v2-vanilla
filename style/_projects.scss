@@ -73,9 +73,19 @@
     width: 200px;
     height: 200px;
     margin: 5px;
+    filter: grayscale(1);
+    transition: .6s;
 }
 
 .project-ico-lg {
     width: 415px;
     margin: 5px;
+    filter: grayscale(1);
+    transition: .6s;
+}
+
+.project-ico:hover, .project-ico-lg:hover {
+    filter: none;
+    transform: scale(1.1);
+    transition: .6s;
 }
