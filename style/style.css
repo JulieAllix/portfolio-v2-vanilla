@@ -26,6 +26,10 @@ body {
   font-weight: 100;
 }
 
+a {
+  color: #f86c6d;
+}
+
 .portfolio {
   overflow: hidden;
   color: white;
@@ -66,13 +70,13 @@ body {
 .hero img {
   /*
     max-height: 480px;
+    cursor: pointer;
     */
   width: 200px;
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  cursor: pointer;
 }
 
 .hero a {
